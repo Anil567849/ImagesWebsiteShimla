@@ -1,0 +1,26 @@
+
+.cardDiv{
+    height: auto;
+    padding: 10px;
+}
+
+.img{
+    height: 18rem;
+    width: 100%;
+}
+.rowDiv{
+    display: flex;
+}
+
+.cardCss{
+    padding : 10px;
+    margin-bottom : 10px;
+    text-decoration: none;
+
+}
+
+.cardTitle{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}

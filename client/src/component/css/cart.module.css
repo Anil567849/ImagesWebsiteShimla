@@ -1,0 +1,29 @@
+
+.cardDiv{
+    height: auto;
+}
+
+.img{
+    height: 20rem;
+    width: 100%;
+}
+.rowDiv{
+    display: flex;
+}
+
+
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color: grey;
+}
+
+.summary{
+    display : flex;
+    /* border : 2px solid black; */
+    align-items : center;
+    margin : 10px;
+    justify-content: center;
+
+}
