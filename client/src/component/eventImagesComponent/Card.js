@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import Styles from '../css/eventImages.module.css';
+import Styles from './eventImages.module.css';
 function Card(props) {
 
 

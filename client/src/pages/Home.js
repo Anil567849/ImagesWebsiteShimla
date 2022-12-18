@@ -1,7 +1,7 @@
 import react, { useEffect, useState, useContext } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
-import Card from './homeComponent/Card';
-import Styles from './css/home.module.css';
+import Card from '../component/homeComponent/Card';
+import Styles from '../component/homeComponent/home.module.css';
 import {UserContext} from '../App';
 
 

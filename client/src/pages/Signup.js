@@ -2,7 +2,10 @@ import React, {useState, useEffect, useContext} from 'react'
 import { NavLink, useNavigate} from 'react-router-dom';
 import {UserContext} from '../App';
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Styles from './css/signup.module.css'
+import Styles from '../component/authComponent/signup.module.css';
+import GoogleSignupButton from '../component/authComponent/GoogleSignupButton';
+
+
 const Signup = ()=> {
 
     const isAuthenticate = async () => {
@@ -127,10 +130,7 @@ const Signup = ()=> {
                         </div>
                         <button type="submit"  className="btn btn-primary mt-3">Sign up</button>
                     </form>
-                    <button className={Styles.google_btn} onClick={googleAuth}>
-						<img src="./images/icons/google.svg" alt="google icon" />
-						<span>Sign up with Google</span>
-					</button>
+                    <GoogleSignupButton text="Sign up with Google" googleAuth={googleAuth} />
                     <NavLink className={Styles.haveAccount} to="/login"><p>Already Have Account?</p></NavLink>
 
             </div>

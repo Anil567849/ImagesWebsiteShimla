@@ -1,11 +1,11 @@
     import React, { useState, useEffect, useRef, useContext} from 'react'
     import { NavLink, useNavigate, useSearchParams } from 'react-router-dom'
     import Cookies from 'js-cookie';
-    import Card from './cartComponent/Card';
+    import {UserContext} from '../App';
     import { ToastContainer, toast } from 'react-toastify';
     import 'react-toastify/dist/ReactToastify.css';
-    import Styles from './css/cart.module.css';
-    import {UserContext} from '../App';
+    import Card from '../component/cartComponent/Card';
+    import Styles from '../component/cartComponent/cart.module.css';
 
     function Cart() {
 

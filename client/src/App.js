@@ -1,18 +1,20 @@
 import { createContext, useReducer, useState, useEffect } from 'react';
 import './App.css';
-import Signup from './component/Signup';
 import {Routes, Route} from 'react-router-dom';
-import Home from './component/Home';
 import {initialState, reducer} from './reducer/UserReducer';
-import Login from './component/Login';
-import UploadImages from './component/admin/UploadImages';
-import EventImages from './component/EventImages';
-import Cart from './component/Cart';
-import Download from './component/Download';
-import Header from './component/Header';
 import Cookies from 'js-cookie';
-export const UserContext = createContext();
 
+
+import Header from './component/headerComponent/Header';
+import Login from './pages/Login';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
+import UploadImages from './component/admin/UploadImages';
+import EventImages from './pages/EventImages';
+import Cart from './pages/Cart';
+import Download from './pages/Download';
+
+export const UserContext = createContext();
 
 function App() {
   let [state, dispatch] = useReducer(reducer, initialState);

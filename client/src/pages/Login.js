@@ -3,8 +3,8 @@ import {NavLink, useNavigate, useParams } from 'react-router-dom';
 import {UserContext} from '../App';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Styles from './css/login.module.css';
-
+import Styles from '../component/authComponent/login.module.css';
+import GoogleSignupButton from '../component/authComponent/GoogleSignupButton';
 
 const Login = ()=> {
 
@@ -118,11 +118,7 @@ const Login = ()=> {
                         <button type="submit" className="btn btn-primary mt-3">log in</button>
                     </form>
 
-                    <button className={Styles.google_btn} onClick={googleAuth}>
-						<img src="./images/icons/google.svg" alt="google icon" />
-						<span>Sign in with Google</span>
-					</button>
-
+                    <GoogleSignupButton text="Sign in with Google" googleAuth={googleAuth} />
 
                     <NavLink className={Styles.dontHaveAccount} to="/signup"><p>Don't Have Account?</p></NavLink>
                 

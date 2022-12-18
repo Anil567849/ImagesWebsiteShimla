@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const User = require("../model/userSchema");
+const User = require("../models/userSchema");
 const passport = require('passport');
 
 class AuthController{

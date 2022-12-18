@@ -1,6 +1,6 @@
 const Razorpay = require('razorpay');
 const crypto = require("crypto");
-const DatabaseController = require('../controller/Database');
+const DatabaseController = require('../controllers/Database');
 
 const instance = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,

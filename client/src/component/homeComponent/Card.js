@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import Styles from '../css/home.module.css';
+import Styles from './home.module.css';
 
 function Card(props) {
 

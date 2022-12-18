@@ -5,9 +5,9 @@ import Cookies from 'js-cookie';
 import io from "socket.io-client"; 
 import 'react-toastify/dist/ReactToastify.css';
 import PacmanLoader from "react-spinners/PacmanLoader";
-import Styles from './css/download.module.css';
-import Card from './downloadComponent/Card';
 import {UserContext} from '../App';
+import Styles from '../component/downloadComponent/download.module.css';
+import Card from '../component/downloadComponent/Card';
 
 
 

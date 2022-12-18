@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const authenticate = require('../middleware/authenticate');
-const AwsS3Controller = require('../controller/Aws_s3');
-const DatabaseController = require("../controller/database");
-const PaymentController = require('../controller/Payment');
-const AuthController = require('../controller/Auth');
+const authenticate = require('../middlewares/authenticate');
+const AwsS3Controller = require('../controllers/Aws_s3');
+const DatabaseController = require("../controllers/database");
+const PaymentController = require('../controllers/Payment');
+const AuthController = require('../controllers/Auth');
 const passport = require('passport');
 
 

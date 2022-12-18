@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
-import Card from './eventImagesComponent/Card';
 import Cookies from 'js-cookie';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Styles from './css/eventImages.module.css';
+import Card from '../component/eventImagesComponent/Card';
+import Styles from '../component/eventImagesComponent//eventImages.module.css';
 
 const EventImages = () => {
     

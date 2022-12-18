@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../css/download.module.css';
+import Styles from './download.module.css';
 
 function Card(props) {
   return (

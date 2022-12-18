@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const imagesSchema = require('../model/imagesSchema');
-const Payment = require('../model/paymentSchema');
-const Cart = require('../model/cartSchema')
-const DownloadedFile = require('../model/downloadedFileSchema');
+const imagesSchema = require('../models/imagesSchema');
+const Payment = require('../models/paymentSchema');
+const Cart = require('../models/cartSchema')
+const DownloadedFile = require('../models/downloadedFileSchema');
 const path = require('path');
 const fs = require('fs');
-const EventsDetail = require('../model/allEventsDetailSchema');
+const EventsDetail = require('../models/allEventsDetailSchema');
 
 
 class DatabaseController{
